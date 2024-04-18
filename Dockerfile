@@ -54,6 +54,7 @@ RUN apt-get update && \
     cp docker-minecraft-craft-to-exile-2/downloadFromCurseForge.js ./downloadFromCurseForge.js && \
     cp docker-minecraft-craft-to-exile-2/start-server.sh /minecraft/server/start-server.sh && \
     cp docker-minecraft-craft-to-exile-2/restart-server.sh /minecraft/server/restart-server.sh && \
+    cp docker-minecraft-craft-to-exile-2/forge-1.20.1-47.2.23-installer.jar /minecraft/server/forge-1.20.1-47.2.23-installer.jar && \
     chmod +x /minecraft/server/start-server.sh && \
     chmod +x ./downloadmods.sh && \
     chmod +x /minecraft/server/restart-server.sh && \
