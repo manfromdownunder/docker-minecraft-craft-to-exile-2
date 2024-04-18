@@ -56,7 +56,7 @@ RUN apt-get update && \
     cp docker-minecraft-craft-to-exile-2/start-server.sh /minecraft/server/start-server.sh && \
     cp docker-minecraft-craft-to-exile-2/restart-server.sh /minecraft/server/restart-server.sh && \
     cp docker-minecraft-craft-to-exile-2/forge-1.20.1-47.2.23-installer.jar /minecraft/server/forge-1.20.1-47.2.23-installer.jar && \
-    mv docker-minecraft-craft-to-exile-2/Craft-to-Exile-2-0.5.2b-Server.zip /minecraft/server/Craft-to-Exile-2-0.5.2b-Server.zip &&\
+    cp docker-minecraft-craft-to-exile-2/Craft-to-Exile-2-0.5.2b-Server.zip /minecraft/server/Craft-to-Exile-2-0.5.2b-Server.zip &&\
     chmod +x /minecraft/server/start-server.sh && \
     chmod +x ./downloadmods.sh && \
     chmod +x /minecraft/server/restart-server.sh && \
@@ -73,13 +73,13 @@ RUN apt-get update && \
     #./downloadmods.sh modslist.txt && \
     apt-get remove -y nodejs && \
     chmod +x /minecraft/server/start-server.sh && \
-    unzip -o Craft-to-Exile-2-0.5.2b-Server.zip && \
+    unzip -o /minecraft/server/Craft-to-Exile-2-0.5.2b-Server.zip && \
     chmod +x /minecraft/server/forge-1.20.1-47.2.23-installer.jar && \
     cd /minecraft/server/ && \
     java -jar /minecraft/server/forge-1.20.1-47.2.23-installer.jar --installServer && \
     chmod +x /minecraft/server/libraries/net/minecraftforge/forge/1.20.1-47.2.23/forge-1.20.1-47.2.23-server.jar && \
     chmod +x /minecraft/server/libraries/net/minecraftforge/forge/1.20.1-47.2.23/unix_args.txt && \
-    rm /minecraft/server/Craft-to-Exile-2-0.5.2b-Server.zip
+    # rm /minecraft/server/Craft-to-Exile-2-0.5.2b-Server.zip
 
 
 # Change to the server directory inside the main Minecraft directory
