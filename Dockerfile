@@ -70,8 +70,9 @@ RUN apt-get update && \
     ./downloadmods.sh modslist.txt && \
     apt-get remove -y nodejs && \
     chmod +x /minecraft/server/start-server.sh && \
-    chmod +x/minecraft/server/forge-1.20.1-47.2.18-installer.jar && \
-    java -jar ./forge-1.20.1-47.2.18-installer.jar --installServer
+    chmod +x /minecraft/server/forge-1.20.1-47.2.18-installer.jar && \
+    cd /minecraft/server/ && \
+    java -jar /minecraft/server/forge-1.20.1-47.2.18-installer.jar --installServer
     
 # Change to the server directory inside the main Minecraft directory
 WORKDIR /minecraft/server
