@@ -13,6 +13,11 @@ jobs:
         platform: [linux/amd64]  # Only amd64 platform is listed here
     
     steps:
+    - name: Change DNS resolver
+      run: |
+        echo "nameserver 1.1.1.1" | sudo tee /etc/resolv.conf > /dev/null
+        echo "nameserver 8.8.8.8" | sudo tee -a /etc/resolv.conf > /dev/null
+
     - name: Checkout code
       uses: actions/checkout@v2
 
