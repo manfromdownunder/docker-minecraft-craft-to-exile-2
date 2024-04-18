@@ -23,7 +23,7 @@ start_server(){
        -XX:G1HeapRegionSize=32M \
        @"/minecraft/server/user_jvm_args.txt" \
        @"/minecraft/server/libraries/net/minecraftforge/forge/1.20.1-47.2.23/unix_args.txt" \
-       -jar /minecraft/server/libraries/net/minecraftforge/forge/1.20.1-47.2.23/forge-1.20.1-47.2.23-serv>
+       -jar /minecraft/server/libraries/net/minecraftforge/forge/1.20.1-47.2.23/forge-1.20.1-47.2.23-server.jar
   MINECRAFT_PID=$!
 }
 
