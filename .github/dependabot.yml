@@ -1,0 +1,10 @@
+version: 2
+updates:
+  - package-ecosystem: "maven" # Specify the package ecosystem
+    directory: "/" # Location of the package manifest
+    schedule:
+      interval: "weekly" # Defines update frequency (daily, weekly, monthly)
+    open-pull-requests-limit: 10 # Maximum number of open pull requests Dependabot should have at any time
+    ignore:
+      - dependency-name: "some-dependency" # Ignore specific dependencies if needed
+        versions: ["2.3.4"]
