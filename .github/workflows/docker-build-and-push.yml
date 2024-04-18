@@ -44,11 +44,11 @@ jobs:
         platforms: ${{ matrix.platform }}
         build-args: ARCH=${{ env.ARCH }}
 
-    - name: Build and push Docker image to GitHub Container Registry
-      uses: docker/build-push-action@v2
-      with:
-        context: .
-        push: true
-        tags: ghcr.io/${{ github.repository_owner }}/docker-minecraft-craft-to-exile-2:1.19.2, ghcr.io/${{ github.repository_owner }}/docker-minecraft-craft-to-exile-2, ghcr.io/${{ github.repository_owner }}/docker-minecraft-craft-to-exile-2:${{ github.sha }}
-        platforms: ${{ matrix.platform }}
-        build-args: ARCH=${{ env.ARCH }}
+#    - name: Build and push Docker image to GitHub Container Registry
+#      uses: docker/build-push-action@v2
+#      with:
+#        context: .
+#        push: true
+#        tags: ghcr.io/${{ github.repository_owner }}/docker-minecraft-craft-to-exile-2:1.19.2, ghcr.io/${{ github.repository_owner }}/docker-minecraft-craft-to-exile-2, ghcr.io/${{ github.repository_owner }}/docker-minecraft-craft-to-exile-2:${{ github.sha }}
+#        platforms: ${{ matrix.platform }}
+#        build-args: ARCH=${{ env.ARCH }}
