@@ -52,4 +52,3 @@ jobs:
         tags: ghcr.io/${{ github.repository_owner }}/docker-minecraft-craft-to-exile-2:1.19.2, ghcr.io/${{ github.repository_owner }}/docker-minecraft-craft-to-exile-2, ghcr.io/${{ github.repository_owner }}/docker-minecraft-craft-to-exile-2:${{ github.sha }}
         platforms: ${{ matrix.platform }}
         build-args: ARCH=${{ env.ARCH }}
-        
