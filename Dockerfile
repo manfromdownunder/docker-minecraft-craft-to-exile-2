@@ -12,7 +12,7 @@ ENV EULA_ACCEPT="true" \
     JAVA_MEMORY_MAX="10000m" \
     JAVA_MEMORY_MIN="8000m" \
     JAVA_PERM_SIZE="256m" \
-    FORGE_VERSION="43.3.5" \
+    FORGE_VERSION="47.1.18" \
     RCON_ENABLED="true" \
     RCON_PASSWORD="yourpassword" \
     RCON_PORT="25575" \
@@ -68,7 +68,7 @@ RUN apt-get update && \
     mv mcrcon /usr/local/bin && \
     cd .. && \
     ./downloadmods.sh modslist.txt && \
-    chmod +x /minecraft/server/start.sh
+    chmod +x /minecraft/server/start-server.sh
 
 # Change to the server directory inside the main Minecraft directory
 WORKDIR /minecraft/server
