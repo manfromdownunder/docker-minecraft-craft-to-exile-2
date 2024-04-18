@@ -101,4 +101,4 @@ RUN echo "eula=${EULA_ACCEPT}" > /minecraft/server/eula.txt && \
 EXPOSE $SERVER_PORT $RCON_PORT
 
 # Start the Minecraft server startup script
-CMD ["/minecraft/server/start.sh"]
+CMD ["/minecraft/server/start-server.sh"]
