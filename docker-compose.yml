@@ -16,7 +16,7 @@ services:
       JAVA_MEMORY_MAX: "10000m"
       JAVA_MEMORY_MIN: "8000m"
       JAVA_PERM_SIZE: "256m"
-      FORGE_VERSION: "43.3.5"
+      FORGE_VERSION: "47.2.18"
       RCON_ENABLED: "true"
       RCON_PASSWORD: "yourpassword"
       RCON_PORT: "25575"
