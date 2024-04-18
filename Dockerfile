@@ -6,13 +6,13 @@ ARG JAVA_VERSION="temurin-18-jdk"
 
 # Set default environment variables including EULA_ACCEPT
 ENV EULA_ACCEPT="true" \
-    MINECRAFT_VERSION="1.19" \
+    MINECRAFT_VERSION="1.20.1" \
     SERVER_PORT="25565" \
     MODPACK_URL="https://www.curseforge.com/minecraft/modpacks/craft-to-exile-2" \
     JAVA_MEMORY_MAX="10000m" \
     JAVA_MEMORY_MIN="8000m" \
     JAVA_PERM_SIZE="256m" \
-    FORGE_VERSION="" \
+    FORGE_VERSION="43.3.5" \
     RCON_ENABLED="true" \
     RCON_PASSWORD="yourpassword" \
     RCON_PORT="25575" \
