@@ -48,7 +48,7 @@ RUN apt-get update && \
     apt-get install -y libxfixes3 libxdamage1 libxcomposite1 libatk1.0-0 libnss3 libxss1 libasound2 libpangocairo-1.0-0 libcups2 libxrandr2 libgbm1 libatk-bridge2.0-0 libxkbcommon0 && \
     curl -sL https://deb.nodesource.com/setup_14.x | bash - && \
     apt-get install -y nodejs && \
-    git clone https://github.com/manfromdownunder/docker-minecraft-steampunk-lps.git && \
+    git clone https://github.com/manfromdownunder/docker-minecraft-craft-to-exile-2.git && \
     cp docker-minecraft-steampunk-lps/downloadmods.sh ./downloadmods.sh && \
     cp docker-minecraft-steampunk-lps/modslist.txt ./modslist.txt && \
     cp docker-minecraft-steampunk-lps/downloadFromCurseForge.js ./downloadFromCurseForge.js && \
