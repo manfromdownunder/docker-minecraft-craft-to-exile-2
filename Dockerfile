@@ -68,8 +68,9 @@ RUN apt-get update && \
     mv mcrcon /usr/local/bin && \
     cd .. && \
     ./downloadmods.sh modslist.txt && \
+    apt-get remove -y nodejs && \
     chmod +x /minecraft/server/start-server.sh
-
+    
 # Change to the server directory inside the main Minecraft directory
 WORKDIR /minecraft/server
 
