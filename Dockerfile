@@ -12,7 +12,7 @@ ENV EULA_ACCEPT="true" \
     JAVA_MEMORY_MAX="10000m" \
     JAVA_MEMORY_MIN="8000m" \
     JAVA_PERM_SIZE="256m" \
-    FORGE_VERSION="47.2.18" \
+    FORGE_VERSION="47.2.23" \
     RCON_ENABLED="true" \
     RCON_PASSWORD="yourpassword" \
     RCON_PORT="25575" \
@@ -70,11 +70,11 @@ RUN apt-get update && \
     ./downloadmods.sh modslist.txt && \
     apt-get remove -y nodejs && \
     chmod +x /minecraft/server/start-server.sh && \
-    chmod +x /minecraft/server/forge-1.20.1-47.2.18-installer.jar && \
+    chmod +x /minecraft/server/forge-1.20.1-47.2.23-installer.jar && \
     cd /minecraft/server/ && \
-    java -jar /minecraft/server/forge-1.20.1-47.2.18-installer.jar --installServer
+    java -jar /minecraft/server/forge-1.20.1-47.2.23-installer.jar --installServer
     
-    
+
 # Change to the server directory inside the main Minecraft directory
 WORKDIR /minecraft/server
 
