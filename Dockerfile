@@ -2,7 +2,7 @@
 FROM debian:bullseye-slim
 
 # Set build-time variables
-ARG JAVA_VERSION="temurin-18-jdk"
+ARG JAVA_VERSION="temurin-17-jdk"
 
 # Set default environment variables including EULA_ACCEPT
 ENV EULA_ACCEPT="true" \
