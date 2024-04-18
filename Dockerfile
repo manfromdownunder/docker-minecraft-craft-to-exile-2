@@ -74,6 +74,7 @@ RUN apt-get update && \
     cd /minecraft/server/ && \
     java -jar /minecraft/server/forge-1.20.1-47.2.18-installer.jar --installServer
     
+    
 # Change to the server directory inside the main Minecraft directory
 WORKDIR /minecraft/server
 
