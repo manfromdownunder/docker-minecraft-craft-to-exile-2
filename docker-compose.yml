@@ -1,0 +1,48 @@
+version: '3'
+
+services:
+  craft-to-exile-2:
+    image: manfromdownunder/docker-minecraft-craft-to-exile-2:latest
+    # command: tail -f /dev/null # debug the container
+    container_name: minecraft-craft-to-exile-2
+    ports:
+      - "25565:25565"
+      - "25575:25575"
+    environment:
+      EULA_ACCEPT: "true"
+      MINECRAFT_VERSION: "1.16.5"
+      SERVER_PORT: "25565"
+      MODPACK_URL: "https://www.curseforge.com/minecraft/modpacks/craft-to-exile-2/"
+      JAVA_MEMORY_MAX: "10000m"
+      JAVA_MEMORY_MIN: "8000m"
+      JAVA_PERM_SIZE: "256m"
+      FORGE_VERSION: "36.2.39"
+      RCON_ENABLED: "true"
+      RCON_PASSWORD: "yourpassword"
+      RCON_PORT: "25575"
+      DIFFICULTY: "normal"
+      GAMEMODE: "survival"
+      HARDCORE: "false"
+      LEVEL_NAME: "world"
+      LEVEL_SEED: "manfromdowunder"
+      MAX_BUILD_HEIGHT: "256"
+      MAX_PLAYERS: "5"
+      MOTD: "Craft 2 Exile 2 Server"
+      PLAYER_IDLE_TIMEOUT: "0"
+      PREVENT_PROXY_CONNECTIONS: "false"
+      PVP: "true"
+      SNOOPER_ENABLED: "true"
+      VIEW_DISTANCE: "7"
+      ALLOW_FLIGHT: "true"
+      ALLOW_NETHER: "true"
+      RESTART_INTERVAL: "0 */4 * * *"
+    volumes:
+      - ./world:/minecraft/server/world
+      - ./world:/minecraft/server/backups
+      - ./logs:/minecraft/server/logs
+      - ./control/ops.json:/minecraft/server/ops.json
+      - ./config/ftbbackups-common.toml:/config/ftbbackups-common.toml
+#      - ./control/banned-ips.json:/minecraft/server/banned-ips.json
+#      - ./control/banned-players.json:/minecraft/server/banned-players.json
+#      - ./control/whitelist.json:/minecraft/server/whitelist.json
+#      - ./start-server.sh:/minecraft/server/start-server.sh
