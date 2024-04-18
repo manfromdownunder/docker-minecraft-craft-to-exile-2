@@ -49,11 +49,11 @@ RUN apt-get update && \
     curl -sL https://deb.nodesource.com/setup_14.x | bash - && \
     apt-get install -y nodejs && \
     git clone https://github.com/manfromdownunder/docker-minecraft-craft-to-exile-2.git && \
-    cp docker-minecraft-steampunk-lps/downloadmods.sh ./downloadmods.sh && \
-    cp docker-minecraft-steampunk-lps/modslist.txt ./modslist.txt && \
-    cp docker-minecraft-steampunk-lps/downloadFromCurseForge.js ./downloadFromCurseForge.js && \
-    cp docker-minecraft-steampunk-lps/start-server.sh /minecraft/server/start-server.sh && \
-    cp docker-minecraft-steampunk-lps/restart-server.sh /minecraft/server/restart-server.sh && \
+    cp docker-minecraft-craft-to-exile-2/downloadmods.sh ./downloadmods.sh && \
+    cp docker-minecraft-craft-to-exile-2/modslist.txt ./modslist.txt && \
+    cp docker-minecraft-craft-to-exile-2/downloadFromCurseForge.js ./downloadFromCurseForge.js && \
+    cp docker-minecraft-craft-to-exile-2/start-server.sh /minecraft/server/start-server.sh && \
+    cp docker-minecraft-craft-to-exile-2/restart-server.sh /minecraft/server/restart-server.sh && \
     chmod +x /minecraft/server/start-server.sh && \
     chmod +x ./downloadmods.sh && \
     chmod +x /minecraft/server/restart-server.sh && \
