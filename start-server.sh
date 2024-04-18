@@ -21,7 +21,9 @@ start_server(){
        -XX:G1NewSizePercent=20 \
        -XX:G1ReservePercent=20 \
        -XX:G1HeapRegionSize=32M \
-       -jar /minecraft/server/forge-${MINECRAFT_VERSION}-${FORGE_VERSION}.jar nogui &
+       @"/minecraft/server/user_jvm_args.txt" \
+       @"/minecraft/server/libraries/net/minecraftforge/forge/1.20.1-47.2.23/unix_args.txt" \
+       -jar /minecraft/server/libraries/net/minecraftforge/forge/1.20.1-47.2.23/forge-1.20.1-47.2.23-serv>
   MINECRAFT_PID=$!
 }
 
