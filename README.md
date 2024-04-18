@@ -1,4 +1,4 @@
-# Minecraft Steampunk LPS
+# Minecraft Craft to Exile 2
 
 This is a docker image for [Craft to Exile 2](https://www.curseforge.com/minecraft/modpacks/craft-to-exile-2)
 
@@ -87,10 +87,10 @@ services:
 
 ## minecraft docker commands
 Manually initiate a server restart
-```docker exec -it minecraft-steampunk-lps-server touch /minecraft/server/autostart.stamp```
+```docker exec -it minecraft-craft-to-exile-2 touch /minecraft/server/autostart.stamp```
 
 Manually initiate a server shutdown
-```docker exec -it minecraft-steampunk-lps-server touch /minecraft/server/autostop.stamp```
+```docker exec -it minecraft-craft-to-exile-2 touch /minecraft/server/autostop.stamp```
 
 
 ## Versions
