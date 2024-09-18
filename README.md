@@ -35,8 +35,6 @@ You must install docker and docker-compose first and confirm it is working. Then
 
 ```yaml
 ---
-version: '3'
-
 services:
   rad2_server:
     image: manfromdownunder/docker-minecraft-craft-to-exile-2:latest
