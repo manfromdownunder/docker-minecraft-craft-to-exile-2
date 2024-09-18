@@ -45,7 +45,7 @@ jobs:
       with:
         context: .
         push: true
-        tags: manfromdownunder/docker-minecraft-craft-to-exile-2:0.5.2b, manfromdownunder/docker-minecraft-craft-to-exile-2:latest, manfromdownunder/docker-minecraft-craft-to-exile-2:${{ github.sha }}
+        tags: manfromdownunder/docker-minecraft-craft-to-exile-2:0.6.2, manfromdownunder/docker-minecraft-craft-to-exile-2:latest, manfromdownunder/docker-minecraft-craft-to-exile-2:${{ github.sha }}
         platforms: ${{ matrix.platform }}
         build-args: ARCH=${{ env.ARCH }}
 
