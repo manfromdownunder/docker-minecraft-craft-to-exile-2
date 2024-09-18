@@ -49,7 +49,7 @@ RUN apt-get update && \
     curl -sL https://deb.nodesource.com/setup_14.x | bash - && \
     apt-get install -y nodejs && \
     git clone https://github.com/manfromdownunder/docker-minecraft-craft-to-exile-2.git && \
-    curl -o docker-minecraft-craft-to-exile-2/Craft to Exile 2-0.6.2.zip -L https://github.com/manfromdownunder/docker-minecraft-craft-to-exile-2/releases/download/C2E2/Craft-to-Exile-2-0.6.2-Server.zip && \
+    curl -o "docker-minecraft-craft-to-exile-2/Craft to Exile 2-0.6.2.zip" -L https://github.com/manfromdownunder/docker-minecraft-craft-to-exile-2/releases/download/C2E2/Craft-to-Exile-2-0.6.2-Server.zip
     cp docker-minecraft-craft-to-exile-2/downloadmods.sh ./downloadmods.sh && \
     cp docker-minecraft-craft-to-exile-2/modslist.txt ./modslist.txt && \
     cp docker-minecraft-craft-to-exile-2/downloadFromCurseForge.js ./downloadFromCurseForge.js && \
