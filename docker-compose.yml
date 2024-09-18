@@ -1,5 +1,3 @@
-version: '3'
-
 services:
   craft-to-exile-2:
     image: manfromdownunder/docker-minecraft-craft-to-exile-2:latest
