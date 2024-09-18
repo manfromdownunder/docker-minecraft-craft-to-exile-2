@@ -93,6 +93,7 @@ Manually initiate a server shutdown
 ```docker exec -it minecraft-craft-to-exile-2 touch /minecraft/server/autostop.stamp```
 
 
+
 ## Versions
 
 * **1.0.0:** - Initial release.
