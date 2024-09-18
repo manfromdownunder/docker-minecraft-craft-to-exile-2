@@ -75,7 +75,7 @@ RUN apt-get update && \
     chmod +x /minecraft/server/start-server.sh && \
     chmod +x /minecraft/server/forge-1.20.1-47.2.23-installer.jar && \
     cd /minecraft/server/ && \
-    unzip -o Craft-to-Exile-2-0.6.2-Server.zip && \
+    unzip -o Craft-to-Exile-2-Server-0.6.2.zip && \
     java -jar /minecraft/server/forge-1.20.1-47.2.23-installer.jar --installServer && \
     chmod +x /minecraft/server/libraries/net/minecraftforge/forge/1.20.1-47.2.23/forge-1.20.1-47.2.23-server.jar && \
     chmod +x /minecraft/server/libraries/net/minecraftforge/forge/1.20.1-47.2.23/unix_args.txt && \
