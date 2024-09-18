@@ -2,7 +2,6 @@
 
 This is a docker image for [Craft to Exile 2](https://www.curseforge.com/minecraft/modpacks/craft-to-exile-2)
 
-
 ## Supported Architectures
 
 Simply pulling `ghcr.io/manfromdownunder/docker-minecraft-craft-to-exile-2:latest` should retrieve the correct image for your arch, but you can also pull specific arch images via tags.
